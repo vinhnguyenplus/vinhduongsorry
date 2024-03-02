@@ -1,0 +1,153 @@
+*{
+  font-family: 'Times New Roman', Times, serif;
+}
+.container-fluid {
+  background-image: url(image/bg.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+.author {
+  color: #000;
+}
+.title {
+  font-size: 150%;
+  transition: transform 0.1s linear;
+  color: rgb(224, 64, 118);
+  z-index: 2;
+}
+.title:hover {
+  cursor: pointer;
+}
+
+.heart-container {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  z-index: 0;
+}
+
+.heart {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  background-color: rgb(247, 131, 170);
+}
+
+.heart::before,
+.heart::after {
+  content: "";
+  width: 100px;
+  height: 100px;
+  background-color: rgba(247, 131, 170);
+  border-radius: 100%;
+  position: absolute;
+}
+
+.heart::before {
+  top: -50px;
+  left: 0;
+}
+
+.heart::after {
+  top: 0;
+  left: 50px;
+}
+
+/* page-two */
+.page-two {
+  display: none;
+  z-index: 10;
+}
+.text {
+  font-size: larger;
+}
+.text-sorry-2 {
+  animation-delay: 6s;
+  font-size: large;
+}
+.text-sorry-3 {
+  animation-delay: 8s;
+}
+.text-sorry-4 {
+  animation-delay: 10s;
+}
+.wrapper-button {
+  animation-delay: 12s;
+}
+
+/* page-three */
+.page-three {
+  display: none;
+}
+.text-watch,
+.label-page-six,
+.item__text-page-five,
+.item__text-page-seven,
+.text-hightlight-page-eight,.link-fb {
+  color: rgb(242, 40, 242);
+}
+.continue-button {
+  animation-delay: 30s;
+  color: rgb(242, 40, 242);
+  background-color: rgb(233, 183, 233);
+}
+.video {
+  width: 35%;
+  border: 2px solid plum;
+}
+
+/* page-four */
+.page-four {
+  display: none;
+}
+.continue-five {
+  animation-delay: 15s;
+}
+
+/* page-five */
+.page-five {
+  display: none;
+}
+.continue-six {
+  animation-delay: 15s;
+}
+
+/* page-six */
+.page-six {
+  display: none;
+}
+.note-bae {
+  background-color: rgb(243, 235, 246);
+}
+.continue-seven {
+  animation-delay: 15s;
+}
+
+/* page-seven */
+.page-seven {
+  display: none;
+  z-index: 100;
+}
+.continue-eight {
+  animation-delay: 8s;
+}
+
+/* page-eight */
+.page-eight {
+  display: none;
+}
+.item__icon-page-eight,
+.text-hightlight-page-eight {
+  animation-iteration-count: infinite;
+}
+
+.button-end{
+  z-index: 10;
+  animation-delay: 50s;
+}
